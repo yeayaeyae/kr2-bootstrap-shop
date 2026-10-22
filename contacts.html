@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — TechStore</title>
+    <meta name="description" content="Адрес, телефон, e-mail и форма обратной связи магазина TechStore.">
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top" aria-label="Основная навигация">
+        <div class="container">
+            <a class="navbar-brand site-navbar__brand" href="index.html">Tech<span>Store</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a></li>
+                </ul>
+                <a class="btn btn-warning ms-lg-3" href="order.html">Оставить заявку</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-header py-4 mb-4">
+        <div class="container">
+            <nav aria-label="Хлебные крошки">
+                <ol class="breadcrumb mb-2">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                </ol>
+            </nav>
+            <h1 class="mb-1">Контакты</h1>
+            <p class="mb-0">Свяжитесь с нами удобным для вас способом.</p>
+        </div>
+    </section>
+
+    <section class="container pb-5">
+        <div class="row g-4">
+            <div class="col-12 col-lg-5">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-12">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="h6 card-title">📍 Адрес</h2>
+                                <p class="card-text mb-0">г. Москва, ул. Технологическая, д. 15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-12">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="h6 card-title">📞 Телефон</h2>
+                                <a class="card-link" href="tel:+79991234567">+7 (999) 123-45-67</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-12">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="h6 card-title">✉️ E-mail</h2>
+                                <a class="card-link" href="mailto:info@techstore.ru">info@techstore.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-12">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h2 class="h6 card-title">🕘 Время работы</h2>
+                                <p class="card-text mb-0">Пн–Пт: 09:00–20:00<br>Сб–Вс: 10:00–18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-7">
+                <div class="card shadow-sm">
+                    <div class="card-body p-3 p-md-4">
+                        <h2 class="h4 card-title mb-3">Обратная связь</h2>
+                        <form class="needs-validation" action="#" method="post" novalidate>
+                            <div class="row g-3">
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label" for="contact-name">Имя</label>
+                                    <input class="form-control" type="text" id="contact-name" name="name" required>
+                                    <div class="invalid-feedback">Укажите имя.</div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label" for="contact-email">E-mail</label>
+                                    <input class="form-control" type="email" id="contact-email" name="email" required>
+                                    <div class="invalid-feedback">Введите корректный e-mail.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label" for="contact-topic">Тема</label>
+                                    <select class="form-select" id="contact-topic" name="topic" required>
+                                        <option value="" selected disabled>Выберите тему</option>
+                                        <option value="question">Вопрос о товаре</option>
+                                        <option value="delivery">Доставка</option>
+                                        <option value="warranty">Гарантия и возврат</option>
+                                    </select>
+                                    <div class="invalid-feedback">Выберите тему.</div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label" for="contact-message">Сообщение</label>
+                                    <textarea class="form-control" id="contact-message" name="message" rows="4" required></textarea>
+                                    <div class="invalid-feedback">Напишите сообщение.</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="contact-agree" name="agree" required>
+                                        <label class="form-check-label" for="contact-agree">Согласен на обработку персональных данных</label>
+                                        <div class="invalid-feedback">Нужно согласие.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast align-items-center text-bg-success border-0" id="form-toast" role="status" aria-live="polite" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">Сообщение отправлено! Ответим в течение рабочего дня.</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white-50 py-4 mt-auto">
+    <div class="container">
+        <div class="row g-3 align-items-center">
+            <div class="col-12 col-md-6 text-center text-md-start">© 2026 TechStore · КР №2, Bootstrap</div>
+            <div class="col-12 col-md-6 text-center text-md-end">
+                <a class="link-light me-3" href="faq.html">FAQ</a>
+                <a class="link-light" href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<button class="btn btn-primary rounded-circle scroll-top d-none" type="button" aria-label="Наверх">↑</button>
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

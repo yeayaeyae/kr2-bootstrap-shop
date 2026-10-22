@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопросы и ответы — TechStore</title>
+    <meta name="description" content="Ответы на частые вопросы о доставке, оплате, гарантии и возврате в TechStore.">
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top" aria-label="Основная навигация">
+        <div class="container">
+            <a class="navbar-brand site-navbar__brand" href="index.html">Tech<span>Store</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+                <a class="btn btn-warning ms-lg-3" href="order.html">Оставить заявку</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-header py-4 mb-4">
+        <div class="container">
+            <nav aria-label="Хлебные крошки">
+                <ol class="breadcrumb mb-2">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+                </ol>
+            </nav>
+            <h1 class="mb-1">Вопросы и ответы</h1>
+            <p class="mb-0">Доставка, оплата, гарантия и возврат.</p>
+        </div>
+    </section>
+
+    <section class="container pb-5">
+        <div class="row g-4">
+            <div class="col-12 col-lg-8">
+                <div class="accordion" id="faq-accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="true" aria-controls="faq-1">
+                                Сколько стоит доставка?
+                            </button>
+                        </h2>
+                        <div id="faq-1" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion">
+                            <div class="accordion-body">Доставка бесплатна при заказе от 20 000 ₽. Для заказов дешевле — 390 ₽ по Москве и от 490 ₽ по России.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
+                                Как быстро привезут заказ?
+                            </button>
+                        </h2>
+                        <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                            <div class="accordion-body">По Москве — на следующий день, в регионы — за 2–3 дня.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">
+                                Какие способы оплаты доступны?
+                            </button>
+                        </h2>
+                        <div id="faq-3" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                            <div class="accordion-body">Банковская карта онлайн, наличные или карта при получении, рассрочка на 6 месяцев без переплаты.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">
+                                Какая гарантия на технику?
+                            </button>
+                        </h2>
+                        <div id="faq-4" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                            <div class="accordion-body">Официальная гарантия производителя — от 1 года. Гарантийный талон выдаётся вместе с товаром.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5">
+                                Можно ли вернуть товар?
+                            </button>
+                        </h2>
+                        <div id="faq-5" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                            <div class="accordion-body">Да, в течение 14 дней, если товар не был в использовании и сохранена упаковка.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="col-12 col-lg-4">
+                <div class="card shadow-sm text-center">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Не нашли ответ?</h2>
+                        <p class="card-text">Напишите нам — ответим в течение рабочего дня.</p>
+                        <a class="btn btn-primary" href="contacts.html">Задать вопрос</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-dark text-white-50 py-4 mt-auto">
+    <div class="container">
+        <div class="row g-3 align-items-center">
+            <div class="col-12 col-md-6 text-center text-md-start">© 2026 TechStore · КР №2, Bootstrap</div>
+            <div class="col-12 col-md-6 text-center text-md-end">
+                <a class="link-light me-3" href="faq.html">FAQ</a>
+                <a class="link-light" href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<button class="btn btn-primary rounded-circle scroll-top d-none" type="button" aria-label="Наверх">↑</button>
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

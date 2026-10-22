@@ -1,0 +1,191 @@
+/* Фирменные настройки TechStore поверх Bootstrap */
+:root {
+    --ts-primary: #0057b8;
+    --ts-primary-dark: #003f86;
+    --ts-accent: #ffb703;
+    --ts-surface: #f4f7fb;
+    --bs-primary: var(--ts-primary);
+    --bs-primary-rgb: 0, 87, 184;
+    --bs-link-color: var(--ts-primary);
+    --bs-link-hover-color: var(--ts-primary-dark);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--ts-surface);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--ts-primary);
+    --bs-btn-border-color: var(--ts-primary);
+    --bs-btn-hover-bg: var(--ts-primary-dark);
+    --bs-btn-hover-border-color: var(--ts-primary-dark);
+    --bs-btn-active-bg: var(--ts-primary-dark);
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible,
+.form-control:focus,
+.form-select:focus {
+    outline: 3px solid var(--ts-accent);
+    outline-offset: 2px;
+}
+
+/* Навигация */
+.site-navbar {
+    background-color: var(--ts-primary-dark);
+}
+
+.site-navbar__brand {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.site-navbar__brand span {
+    color: var(--ts-accent);
+}
+
+/* Hero-блок */
+.hero {
+    color: #fff;
+    background:
+        radial-gradient(circle at 85% 20%, rgba(255, 183, 3, 0.35), transparent 40%),
+        linear-gradient(135deg, var(--ts-primary-dark), var(--ts-primary));
+}
+
+.hero__emoji {
+    font-size: clamp(5rem, 14vw, 9rem);
+    line-height: 1;
+}
+
+.page-header {
+    color: #fff;
+    background: linear-gradient(135deg, var(--ts-primary-dark), var(--ts-primary));
+}
+
+.page-header .breadcrumb {
+    --bs-breadcrumb-divider-color: rgba(255, 255, 255, 0.6);
+    --bs-breadcrumb-item-active-color: rgba(255, 255, 255, 0.85);
+}
+
+.page-header .breadcrumb a {
+    color: #fff;
+}
+
+/* Карусель промо-акций */
+.promo-slide {
+    min-height: 220px;
+}
+
+.promo-slide--sale {
+    background: linear-gradient(135deg, #d62828, #f77f00);
+}
+
+.promo-slide--new {
+    background: linear-gradient(135deg, #2a9d8f, #264653);
+}
+
+.promo-slide--delivery {
+    background: linear-gradient(135deg, #5a189a, #9d4edd);
+}
+
+/* Карточки товаров */
+.product-card {
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 63, 134, 0.15);
+}
+
+.product-card__badge {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 1;
+}
+
+.product-card__image,
+.product-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9f0fa;
+}
+
+.product-card__image {
+    height: 160px;
+    font-size: 4.5rem;
+}
+
+.product-card__price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--ts-primary-dark);
+}
+
+.product-card__old-price {
+    font-size: 0.9rem;
+    color: var(--bs-secondary-color);
+    text-decoration: line-through;
+}
+
+/* Страница товара */
+.product-gallery {
+    min-height: 320px;
+    font-size: 9rem;
+}
+
+.product-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--ts-primary-dark);
+}
+
+/* Преимущества */
+.advantage__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.75rem;
+    background-color: #e9f0fa;
+}
+
+/* Фильтр каталога прилипает при прокрутке на больших экранах */
+@media (min-width: 992px) {
+    .catalog-filter {
+        position: sticky;
+        top: 5rem;
+    }
+}
+
+/* Уведомления поверх контента */
+.toast-container {
+    z-index: 1090;
+}
+
+/* Кнопка «Наверх» */
+.scroll-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1030;
+}
+
+@media (max-width: 575.98px) {
+    .hero {
+        text-align: center;
+    }
+
+    .product-gallery {
+        min-height: 220px;
+        font-size: 6rem;
+    }
+}

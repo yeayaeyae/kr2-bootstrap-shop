@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смартфон Pro X — TechStore</title>
+    <meta name="description" content="Описание, характеристики и цена товара в магазине TechStore.">
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top" aria-label="Основная навигация">
+        <div class="container">
+            <a class="navbar-brand site-navbar__brand" href="index.html">Tech<span>Store</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="product.html">Товар</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+                <a class="btn btn-warning ms-lg-3" href="order.html">Оставить заявку</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main data-product-page>
+
+    <div class="container pt-4">
+        <nav aria-label="Хлебные крошки">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+                <li class="breadcrumb-item active" aria-current="page" data-field="title">Смартфон Pro X</li>
+            </ol>
+        </nav>
+    </div>
+
+    <section class="container pb-5">
+        <div class="row g-4 align-items-start">
+            <div class="col-12 col-md-6">
+                <div class="product-gallery rounded-4 shadow-sm" aria-hidden="true" data-field="image">📱</div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="d-flex gap-2 mb-2">
+                    <span class="badge text-bg-secondary" data-field="category">Смартфоны</span>
+                    <span class="badge text-bg-danger" data-badge>Хит</span>
+                </div>
+                <h1 class="mb-3" data-field="title">Смартфон Pro X</h1>
+                <p class="lead" data-field="description">Современный смартфон для работы, общения и развлечений.</p>
+                <p class="mb-1">
+                    <span class="product-price" data-field="price">49 990 ₽</span>
+                    <span class="product-card__old-price ms-2" data-field="oldPrice">54 990 ₽</span>
+                </p>
+                <p class="text-success mb-4">✓ В наличии · доставка 1–3 дня</p>
+
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#quick-order">
+                        Быстрая заявка
+                    </button>
+                    <a class="btn btn-outline-primary btn-lg" href="order.html" data-order-link>Оформить заказ</a>
+                    <a class="btn btn-link btn-lg" href="catalog.html">← В каталог</a>
+                </div>
+
+                <div class="alert alert-secondary mb-0" role="alert">
+                    Гарантия 1 год. Возврат в течение 14 дней без объяснения причин.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pb-5">
+        <ul class="nav nav-tabs" id="product-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab-specs" data-bs-toggle="tab" data-bs-target="#pane-specs"
+                        type="button" role="tab" aria-controls="pane-specs" aria-selected="true">Характеристики</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-delivery" data-bs-toggle="tab" data-bs-target="#pane-delivery"
+                        type="button" role="tab" aria-controls="pane-delivery" aria-selected="false">Доставка и оплата</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-reviews" data-bs-toggle="tab" data-bs-target="#pane-reviews"
+                        type="button" role="tab" aria-controls="pane-reviews" aria-selected="false">
+                    Отзывы <span class="badge rounded-pill text-bg-primary">2</span>
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content bg-white border border-top-0 rounded-bottom p-3 p-md-4">
+            <div class="tab-pane fade show active" id="pane-specs" role="tabpanel" aria-labelledby="tab-specs" tabindex="0">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover mb-0">
+                        <caption>Технические характеристики товара</caption>
+                        <thead>
+                            <tr><th scope="col">Характеристика</th><th scope="col">Значение</th></tr>
+                        </thead>
+                        <tbody data-features></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pane-delivery" role="tabpanel" aria-labelledby="tab-delivery" tabindex="0">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Курьером по Москве — 1 день, бесплатно от 20 000 ₽.</li>
+                    <li class="list-group-item">Пункты выдачи по России — 2–3 дня.</li>
+                    <li class="list-group-item">Оплата картой, наличными при получении или в рассрочку.</li>
+                </ul>
+            </div>
+
+            <div class="tab-pane fade" id="pane-reviews" role="tabpanel" aria-labelledby="tab-reviews" tabindex="0">
+                <div class="row g-3">
+                    <div class="col-12 col-lg-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="h6 card-title">Анна <span class="text-warning">★★★★★</span></h3>
+                                <p class="card-text mb-0">Отличное качество, доставили на следующий день.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="h6 card-title">Игорь <span class="text-warning">★★★★☆</span></h3>
+                                <p class="card-text mb-0">Всё работает, консультант помог с выбором.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<div class="modal fade" id="quick-order" tabindex="-1" aria-labelledby="quick-order-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form class="needs-validation" novalidate>
+                <div class="modal-header">
+                    <h2 class="modal-title h5" id="quick-order-title">Быстрая заявка</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label" for="quick-product">Товар</label>
+                        <input class="form-control" type="text" id="quick-product" name="product" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="quick-name">Имя</label>
+                        <input class="form-control" type="text" id="quick-name" name="name" required>
+                        <div class="invalid-feedback">Укажите имя.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="quick-phone">Телефон</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">+7</span>
+                            <input class="form-control" type="tel" id="quick-phone" name="phone"
+                                   placeholder="999 123-45-67" pattern="[0-9 \-]{10,15}" required>
+                            <div class="invalid-feedback">Введите 10 цифр номера.</div>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="quick-agree" name="agree" required>
+                        <label class="form-check-label" for="quick-agree">Согласен на обработку персональных данных</label>
+                        <div class="invalid-feedback">Нужно согласие.</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast align-items-center text-bg-success border-0" id="form-toast" role="status" aria-live="polite" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">Заявка отправлена! Мы перезвоним в течение 15 минут.</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white-50 py-4 mt-auto">
+    <div class="container">
+        <div class="row g-3 align-items-center">
+            <div class="col-12 col-md-6 text-center text-md-start">© 2026 TechStore · КР №2, Bootstrap</div>
+            <div class="col-12 col-md-6 text-center text-md-end">
+                <a class="link-light me-3" href="faq.html">FAQ</a>
+                <a class="link-light" href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<button class="btn btn-primary rounded-circle scroll-top d-none" type="button" aria-label="Наверх">↑</button>
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

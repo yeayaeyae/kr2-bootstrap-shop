@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore — магазин электроники</title>
+    <meta name="description" content="TechStore: смартфоны, ноутбуки и наушники с доставкой и гарантией.">
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top" aria-label="Основная навигация">
+        <div class="container">
+            <a class="navbar-brand site-navbar__brand" href="index.html">Tech<span>Store</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+                <a class="btn btn-warning ms-lg-3" href="order.html">Оставить заявку</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero py-5">
+        <div class="container py-lg-4">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-7">
+                    <span class="badge text-bg-warning mb-3">Скидки до 15% до конца месяца</span>
+                    <h1 class="display-5 fw-bold">Электроника для работы, учёбы и отдыха</h1>
+                    <p class="lead mb-4">Смартфоны, ноутбуки и наушники с официальной гарантией и доставкой по всей России.</p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+                        <a class="btn btn-light btn-lg" href="catalog.html">Перейти в каталог</a>
+                        <a class="btn btn-outline-light btn-lg" href="#popular">Популярные товары</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 text-center">
+                    <div class="hero__emoji" aria-hidden="true">💻📱🎧</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5" aria-label="Акции">
+        <div id="promo-carousel" class="carousel slide rounded-4 overflow-hidden" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#promo-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Акция 1"></button>
+                <button type="button" data-bs-target="#promo-carousel" data-bs-slide-to="1" aria-label="Акция 2"></button>
+                <button type="button" data-bs-target="#promo-carousel" data-bs-slide-to="2" aria-label="Акция 3"></button>
+            </div>
+            <div class="carousel-inner text-white">
+                <div class="carousel-item active">
+                    <div class="promo-slide promo-slide--sale d-flex align-items-center justify-content-center text-center p-5">
+                        <div>
+                            <h2 class="fw-bold">−5 000 ₽ на Смартфон Pro X</h2>
+                            <p class="mb-3">Только до конца месяца</p>
+                            <a class="btn btn-light" href="product.html?product=phone-pro">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="promo-slide promo-slide--new d-flex align-items-center justify-content-center text-center p-5">
+                        <div>
+                            <h2 class="fw-bold">Новинка: Ноутбук Air 15</h2>
+                            <p class="mb-3">Лёгкий, тихий, до 12 часов без зарядки</p>
+                            <a class="btn btn-light" href="product.html?product=laptop-air">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="promo-slide promo-slide--delivery d-flex align-items-center justify-content-center text-center p-5">
+                        <div>
+                            <h2 class="fw-bold">Бесплатная доставка от 20 000 ₽</h2>
+                            <p class="mb-3">Привезём за 1–3 дня</p>
+                            <a class="btn btn-light" href="faq.html">Условия доставки</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#promo-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#promo-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий слайд</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="advantages" class="container pb-5">
+        <h2 class="text-center mb-4">Почему TechStore</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <div class="advantage__icon rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" aria-hidden="true">🛡️</div>
+                    <h3 class="h5">Гарантия</h3>
+                    <p class="text-secondary mb-0">Официальная гарантия производителя от 1 года.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <div class="advantage__icon rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" aria-hidden="true">🚚</div>
+                    <h3 class="h5">Быстрая доставка</h3>
+                    <p class="text-secondary mb-0">Доставка по России за 1–3 дня.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <div class="advantage__icon rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" aria-hidden="true">💳</div>
+                    <h3 class="h5">Удобная оплата</h3>
+                    <p class="text-secondary mb-0">Картой, наличными или в рассрочку.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm text-center p-3">
+                    <div class="advantage__icon rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" aria-hidden="true">💬</div>
+                    <h3 class="h5">Поддержка</h3>
+                    <p class="text-secondary mb-0">Консультанты помогут с выбором 7 дней в неделю.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="popular" class="container pb-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-4">
+            <h2 class="mb-0">Популярные товары</h2>
+            <a class="btn btn-outline-primary" href="catalog.html">Весь каталог</a>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card product-card h-100 shadow-sm">
+                    <span class="badge text-bg-danger product-card__badge">Хит</span>
+                    <div class="product-card__image card-img-top" aria-hidden="true">📱</div>
+                    <div class="card-body d-flex flex-column">
+                        <p class="text-secondary small mb-1">Смартфоны</p>
+                        <h3 class="card-title h5">Смартфон Pro X</h3>
+                        <p class="card-text">Современный смартфон для работы, общения и развлечений.</p>
+                        <p class="mt-auto mb-3"><span class="product-card__price">49 990 ₽</span> <span class="product-card__old-price">54 990 ₽</span></p>
+                        <a class="btn btn-primary" href="product.html?product=phone-pro">Подробнее</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card product-card h-100 shadow-sm">
+                    <span class="badge text-bg-success product-card__badge">Новинка</span>
+                    <div class="product-card__image card-img-top" aria-hidden="true">💻</div>
+                    <div class="card-body d-flex flex-column">
+                        <p class="text-secondary small mb-1">Ноутбуки</p>
+                        <h3 class="card-title h5">Ноутбук Air 15</h3>
+                        <p class="card-text">Лёгкий ноутбук для учёбы, работы и повседневных задач.</p>
+                        <p class="mt-auto mb-3"><span class="product-card__price">79 990 ₽</span></p>
+                        <a class="btn btn-primary" href="product.html?product=laptop-air">Подробнее</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card product-card h-100 shadow-sm">
+                    <span class="badge text-bg-success product-card__badge">Новинка</span>
+                    <div class="product-card__image card-img-top" aria-hidden="true">🎧</div>
+                    <div class="card-body d-flex flex-column">
+                        <p class="text-secondary small mb-1">Наушники</p>
+                        <h3 class="card-title h5">Sound Pro</h3>
+                        <p class="card-text">Беспроводные наушники с качественным звуком.</p>
+                        <p class="mt-auto mb-3"><span class="product-card__price">12 990 ₽</span></p>
+                        <a class="btn btn-primary" href="product.html?product=sound-pro">Подробнее</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pb-5">
+        <div class="alert alert-info d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-0" role="alert">
+            <div>
+                <h2 class="h5 alert-heading mb-1">Не знаете, что выбрать?</h2>
+                <p class="mb-0">Оставьте заявку — консультант перезвонит и поможет подобрать технику.</p>
+            </div>
+            <a class="btn btn-primary flex-shrink-0" href="order.html">Оставить заявку</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-dark text-white-50 py-4 mt-auto">
+    <div class="container">
+        <div class="row g-3 align-items-center">
+            <div class="col-12 col-md-6 text-center text-md-start">© 2026 TechStore · КР №2, Bootstrap</div>
+            <div class="col-12 col-md-6 text-center text-md-end">
+                <a class="link-light me-3" href="faq.html">FAQ</a>
+                <a class="link-light" href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<button class="btn btn-primary rounded-circle scroll-top d-none" type="button" aria-label="Наверх">↑</button>
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
